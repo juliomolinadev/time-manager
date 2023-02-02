@@ -1,0 +1,100 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+#root {
+	height: 100vh;
+}
+
+::-webkit-scrollbar {
+	width: 0.7rem;
+	height: 0.7rem;
+}
+::-webkit-scrollbar-track {
+	background-color: lighten($color: v.$secondary, $amount: 40);
+	border-radius: 5rem;
+	margin: 2rem;
+}
+::-webkit-scrollbar-thumb {
+	background-color: lighten($color: v.$secondary, $amount: 25);
+	border-radius: 5rem;
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: lighten($color: v.$secondary, $amount: 10);
+}
+
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: v.$mainFont;
+	font-size: 1.4rem;
+	background-color: v.$white;
+}
+
+p {
+	color: v.$black;
+	font-size: 2rem;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 2rem;
+	overflow-y: scroll;
+
+	@include m.desktop {
+		padding: 0 4rem;
+	}
+}
+
+.sectionContainer {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+h1,
+h2,
+h3 {
+	margin: 0 0 v.$spacing 0;
+	color: v.$primary;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2.6rem;
+}
+
+h3 {
+	font-size: 2.2rem;
+}
+
+.authSpinner {
+	margin: 50vh auto;
+	@include m.spinner(1rem, 10rem, v.$secondary);
+}
+
+.displayNone {
+	display: none;
+}

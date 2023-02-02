@@ -1,0 +1,98 @@
+@use "variables" as v;
+
+/** Media Queries **/
+@mixin mobile {
+	@media (min-width: v.$mobile) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (min-width: v.$tablet) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (min-width: v.$desktop) {
+		@content;
+	}
+}
+
+@mixin monitor {
+	@media (min-width: v.$monitor) {
+		@content;
+	}
+}
+
+@mixin button($color, $text) {
+	background-color: $color;
+	font-size: 1.4rem;
+	padding: 1.2rem 3rem;
+	margin-top: 5rem;
+	border-radius: 0.5rem;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	text-align: center;
+	color: $text;
+	text-decoration: none;
+	transition: background-color 300ms ease;
+	border: none;
+
+	&:hover {
+		cursor: pointer;
+		background-color: darken($color, 10);
+	}
+}
+
+@mixin grid($columns, $spacing) {
+	display: grid;
+	gap: $spacing;
+	grid-template-columns: repeat($columns, 1fr);
+}
+
+@mixin transition($property, $time) {
+	transition: $property $time ease-in-out;
+}
+
+@mixin fadeIn($time) {
+	animation: fadeIn $time;
+
+	@keyframes fadeIn {
+		from {
+			opacity: 0;
+		}
+
+		to {
+			opacity: 1;
+		}
+	}
+}
+
+@mixin shadow() {
+	// box-shadow: 0px 0px 10px 3px rgb(0 0 0 / 15%);
+	box-shadow: 0px 0px 8px 1px rgb(0 0 0 / 12%);
+}
+
+@mixin spinner($border, $size, $color) {
+	border: $border solid rgba($color, 0.3);
+	width: $size;
+	height: $size;
+	border-radius: 50%;
+	border-left-color: $color;
+
+	animation: spin 1000ms linear infinite;
+
+	@keyframes spin {
+		0% {
+			transform: rotate(0deg);
+		}
+
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+}
