@@ -10,16 +10,16 @@
 	height: 0.7rem;
 }
 ::-webkit-scrollbar-track {
-	background-color: lighten($color: v.$secondary, $amount: 40);
+	background-color: lighten($color: v.$yellow100, $amount: 40);
 	border-radius: 5rem;
 	margin: 2rem;
 }
 ::-webkit-scrollbar-thumb {
-	background-color: lighten($color: v.$secondary, $amount: 25);
+	background-color: lighten($color: v.$yellow100, $amount: 25);
 	border-radius: 5rem;
 }
 ::-webkit-scrollbar-thumb:hover {
-	background-color: lighten($color: v.$secondary, $amount: 10);
+	background-color: lighten($color: v.$yellow100, $amount: 10);
 }
 
 html {
@@ -36,11 +36,11 @@ html {
 body {
 	font-family: v.$mainFont;
 	font-size: 1.4rem;
-	background-color: v.$white;
+	background-color: v.$backgroundAppDark;
 }
 
 p {
-	color: v.$black;
+	color: v.$grey50;
 	font-size: 2rem;
 }
 
@@ -75,7 +75,6 @@ h1,
 h2,
 h3 {
 	margin: 0 0 v.$spacing 0;
-	color: v.$primary;
 }
 
 h1 {
@@ -92,7 +91,7 @@ h3 {
 
 .authSpinner {
 	margin: 50vh auto;
-	@include m.spinner(1rem, 10rem, v.$secondary);
+	@include m.spinner(1rem, 10rem, v.$yellow100);
 }
 
 .displayNone {

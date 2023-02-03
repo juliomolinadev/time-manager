@@ -25,28 +25,28 @@
 	}
 }
 
-@mixin button($color, $text) {
-	background-color: $color;
-	font-size: 1.4rem;
-	padding: 1.2rem 3rem;
-	margin-top: 5rem;
-	border-radius: 0.5rem;
-	font-weight: 700;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	text-align: center;
-	color: $text;
-	text-decoration: none;
-	transition: background-color 300ms ease;
-	border: none;
+// @mixin button($color, $text) {
+// 	background-color: $color;
+// 	font-size: 1.4rem;
+// 	padding: 1.2rem 3rem;
+// 	margin-top: 5rem;
+// 	border-radius: 0.5rem;
+// 	font-weight: 700;
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: center;
+// 	width: 100%;
+// 	text-align: center;
+// 	color: $text;
+// 	text-decoration: none;
+// 	transition: background-color 300ms ease;
+// 	border: none;
 
-	&:hover {
-		cursor: pointer;
-		background-color: darken($color, 10);
-	}
-}
+// 	&:hover {
+// 		cursor: pointer;
+// 		background-color: darken($color, 10);
+// 	}
+// }
 
 @mixin grid($columns, $spacing) {
 	display: grid;

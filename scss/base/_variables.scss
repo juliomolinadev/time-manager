@@ -1,21 +1,45 @@
-// Fuentes
-$mainFont: "Heebo", sans-serif;
+// Fonts
+$mainFont: "Inter", sans-serif;
+$logoFont: "Kaushan Script", cursive;
 
-// Tamaño de Media Queries
+// Media queries sizes
 $mobile: 480px;
 $tablet: 768px;
-$desktop: 768px; //dev
-// $desktop: 1024px; //production
+$desktop: 1024px;
 $monitor: 1440px;
 
-$primary: #2d3748;
-$secondary: #3182ce;
-$black: #000;
-$textColor: #667a8a;
-$white: #ffffff;
-$appBackground: #fbfeff;
-$danger: #cf4e46;
-$alert: #cfaf1d;
-$success: #4ccf27;
+$backgroundAppDark: #05162a;
+$backgroundComponentDark: #212e41;
+$backgroundInputDark: #373d4b;
+
+$blue100: #0f8bee;
+$blue30: #0f8bee4d;
+
+$orange100: #e9570a;
+$orange30: #e9570a4d;
+
+$red100: #d6214a;
+$red30: #d6214a4d;
+
+$pink100: #fe638b;
+$pink30: #fe638b4d;
+
+$cyan100: #00ded6;
+$cyan30: #00ded64d;
+
+$purple100: #7407a7;
+$purple30: #7407a74d;
+
+$green100: #4ed238;
+$green30: #4ed2384d;
+
+$yellow100: #fff167;
+$yellow30: #fff1674d;
+
+$grey100: #000000;
+$grey50: #667a8a;
+$grey20: #c8d4cd;
+$grey10: #e5e9ea;
+$grey0: #ffffff;
 
 $spacing: 2rem;
