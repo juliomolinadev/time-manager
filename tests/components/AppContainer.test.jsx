@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { AppContainer } from "../../src/components/AppContainer";
+import { AppContainer } from "../../src/components";
 
 describe("<AppContainer/> tests", () => {
 	test("should show a header", () => {

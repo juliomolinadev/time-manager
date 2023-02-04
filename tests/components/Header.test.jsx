@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { Header } from "../../src/components/Header";
+import { Header } from "../../src/components";
 
 describe("<Header /> tests", () => {
 	test("should show app logo", () => {

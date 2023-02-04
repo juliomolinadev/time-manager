@@ -1,6 +1,7 @@
 import { Provider } from "react-redux";
-import { AppContainer } from "./components/AppContainer";
+
 import { store } from "./store";
+import { AppContainer } from "./components";
 
 export const App = () => {
 	return (
